@@ -1,0 +1,94 @@
+.card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+  height: 100px;
+  cursor: pointer;
+}
+
+.card:hover {
+  background: #f9fafb;
+  border-color: #d1d5db;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.cardContent {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.cardContent h3 {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.circle {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .circle {
+  transform: scale(1.05);
+}
+
+.options {
+  position: relative;
+}
+
+.optionsButton {
+  background: none;
+  border: none;
+  color: #000000;
+  cursor: pointer;
+  padding: 8px;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+  border-radius: 6px;
+}
+
+.optionsButton:hover {
+  opacity: 1;
+  background: #f3f4f6;
+}
+
+.optionsMenu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  background: white;
+  border-radius: 8px;
+  padding: 4px;
+  z-index: 10;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e5e7eb;
+  min-width: 160px;
+}
+
+.optionsMenu button {
+  background: none;
+  border: none;
+  color: #000000;
+  padding: 8px 12px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: all 0.2s ease;
+}
+
+.optionsMenu button:hover {
+  background: #f3f4f6;
+  color: #000000;
+}
